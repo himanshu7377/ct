@@ -2,17 +2,18 @@ import React from 'react';
 import './style.css'; // Import CSS file for styles
 import logo from '../../images/logo.png';
 import mountain from '../../images/losangeles_mountains_2.png';
-import reactangle from '../../images/rectangle_20.jpg';
+
+import Carousel from '../Carousel';
 const FirstPage = () => {
   return (
     <div id="history" className="main-content-wrapper">
       <div className="sticky-nav">
-            <div className="logo-2 group">
+            <div className="logo-2">
             <img className="vector-smart-object" src={logo} alt="" width="45" height="45" />
             <img className="text-3" src={mountain} alt="LOSANGELES MOUNTAINS" width="110" height="43" title="LOSANGELES MOUNTAINS" />
             </div>
-            <div className="nav-2 group">
-            <a href="#history" className="text-4">01. history &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div className="nav-2">
+            <a href="#history" className="text-4">01. history </a>
             <a href="#team" className="text-4">02. team</a>
             
             </div>
@@ -28,6 +29,10 @@ const FirstPage = () => {
       </div>
       <div className="bg-2">
         {/* Add React Carousel component here */}
+        <div className='carousel'>
+
+        <Carousel />
+        </div>
       </div>
     </div>
   );
