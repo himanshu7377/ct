@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Mountain1 = () => (
-  <div className="tab-1 active">
+  <div className="tab-mountain">
     <div className="content">
       <p className="schedule">SCHEDULE</p>
       <p className="text-13">
@@ -12,7 +12,7 @@ const Mountain1 = () => (
 );
 
 const Mountain2 = () => (
-  <div className="tab-2 active">
+  <div className="tab-mountain ">
     <div className="content-2">
       <p className="schedule-2">SCHEDULE</p>
       <p className="text-14">

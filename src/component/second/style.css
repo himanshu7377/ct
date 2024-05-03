@@ -55,59 +55,95 @@
   }
   
   .tabs {
-    height: 40px;
-    /* margin-top: 60px; */
-    padding: 8px 0 6px;
+    background-color: #414f6b;
+    margin-top: 40px;
+    padding: 10px 0;
     position: relative;
-
-    background-size: cover;
   }
   
   .l-constrained-2 {
-   
     padding: 0 18px;
     position: relative;
-    /* background: url('../../images/rectangle_20.jpg') no-repeat center 0; */
     width: 100%;
     display: flex;
-    height: 50px;
+    height: auto;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+  }
+  
+  .tab-button {
     display: flex;
     justify-content: flex-start;
-    padding-left: 20%;
-    background-color:#414f6b ;
     
+
+  }
+  
+  .tab-button-item {
+    background-color: #5e709e;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+  
+  .tab-button-item.active {
+    background-color: #b0b4be; /* Change this color to adjust the highlight */
+  }
+  
+  .group-3 {
+    display: flex;
+    justify-content: space-around;
   }
   
   .text-11 {
-    float: left;
-    margin: 0 36px 0 0;
+    display: flex;
+    margin: 0 16px 0 0;
     width: 120px;
     color: #b0b4be;
     font-family: Oswald, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
+    
+   
+    
+  }
 
+  .text-11:hover {
+    color: #0af06d; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+ 
+
+  .tab-content {
+    /* height: 546px; */
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    /* top: -50px; */
+    
+   
     
   }
   
-  .tab-content {
-    height: 546px;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-  }
-  
-  .tab-2 {
+  .tab-mountain2 {
     left: 0;
     padding: 101px 0 216px;
     position: absolute;
-    top: 50px;
+    /* top: 50px; */
     width: 100%;
     background: url("../../images/photo-1414449381078-c7768.png") no-repeat center 0;
     background-position: center top;
     
     background-size: cover;
+    
   }
   
   .content {
@@ -118,6 +154,7 @@
     right: 273px;
     width: 352px;
     background: rgba(255, 255, 255, 0.7);
+    
   }
   
   .schedule {
@@ -135,16 +172,19 @@
     line-height: 24px;
   }
   
-  .tab-1 {
+  .tab-mountain1 {
     left: 0;
     padding: 101px 0 216px;
-    position: absolute;
-    top: 50px;
+    position: relative;
+    /* top: 50px; */
     width: 100%;
+    height: 100vh;
     background: url('../../images/photo-1417021423914-07097.png') no-repeat center 0;
     background-position: center top;
     
     background-size: cover;
+    
+    
   }
   
   .content-2 {
@@ -173,4 +213,7 @@
   }
   
 
-  
+  .active {
+    font-weight: bold;
+    color: #fff; /* Change color to indicate active tab */
+  }
