@@ -1,0 +1,89 @@
+/* Accordion styles */
+
+
+
+.accordion-tab {
+    width: 100%;
+    padding: 10px;
+    border: none;
+   display: block;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .content-1 {
+    background: url('../../images/peak.jpg') no-repeat center 0;
+    max-height: 100%;
+    color: #fff;
+  }
+
+.schedule{
+    color: #fff;
+}
+  .content-2 {
+    background: url('../../images/peak_2.jpg') no-repeat center 0;
+    max-height: 50%;
+  
+    color: #fff;
+  }
+
+
+  
+  .accordion-content {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: white;
+   
+    
+    
+  }
+  
+  .accordion-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #b0b4be;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .text-13{
+    font-size: 20px;
+    font-weight: bold;
+    
+    max-height: 100%;
+  }
+  
+
+  @media only screen and (max-width: 576px) {
+  
+    .content-2 {
+      max-width: 100%;
+      
+    }
+  }
+
+
+  
+  @media only screen and (max-width: 768px) {
+  
+    .content-2 {
+      max-width: 100%;
+      
+    }
+  }
